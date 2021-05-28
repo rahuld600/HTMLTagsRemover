@@ -26,4 +26,4 @@ def removeTAGS():
         return jsonify({"error" : traceback.format_exc()})
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=False,host='0.0.0.0')
