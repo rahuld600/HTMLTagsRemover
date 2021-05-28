@@ -1,6 +1,3 @@
-
-
-
 from flask import Flask, jsonify, request
 app = Flask(__name__)
 import requests
@@ -27,9 +24,6 @@ def removeTAGS():
         return jsonify(result)
     except Exception as e:
         return jsonify({"error" : traceback.format_exc()})
-
-
-    
 
 if __name__ == "__main__":
     app.run(debug=True)
