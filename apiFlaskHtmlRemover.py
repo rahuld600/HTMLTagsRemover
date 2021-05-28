@@ -18,8 +18,8 @@ def removeTAGS():
             data.decompose()
         texts = ' '.join(soup.stripped_strings)
         result = {
-            "PageUrl":website,
-            "RawData":texts
+            
+            "RawContent":texts
         }
         return jsonify(result)
     except Exception as e:
